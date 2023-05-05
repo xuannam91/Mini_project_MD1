@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:rgb(98, 90, 94);
+    
+}
+.container{
+    text-align: center;
+    padding-top: 150px;
+    line-height: 30px;
+    
+}
+.container img{
+    margin-bottom: 15px;
+}
+.main{
+    margin: auto;
+    border: 2px solid pink;
+    width: 500px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(220, 203, 179);
+}
+.container .main h1{
+    margin: 15px;
+    color: rgb(255, 115, 0);
+}
+.form-control{
+    padding: 15px 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+}
+.form-control::placeholder{
+    padding-left: 10px;
+}
+.container .main .btn{
+    background-color: rgb(123, 0, 255);
+    padding: 8px 30px;
+    border-radius: 6px;
+    border: none;
+    
+}
+

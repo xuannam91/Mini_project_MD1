@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: gray;
+}
+.main{
+    border: 1px solid rgb(86, 74, 76);
+    width: 550px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    line-height: 50px;
+    background-color: bisque;
+}
+.main .main-form h2{
+    color: blueviolet;
+}
+.main .main-form .form-control{
+    width: 100%;
+    padding: 23px 0px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.main .main-form .form-control::placeholder{
+    padding: 20px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color: red;
+    border-radius: 5px;
+    color: aliceblue;
+}

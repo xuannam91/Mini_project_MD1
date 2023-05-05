@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./xemonline.css">
+  <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- phần đầu trang , thanh navbar-->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./trangchu.html"><img src="./img/phimmoi.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Phim mới</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Phim lẻ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Thể loại
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Phim chiếu rạp</a></li>
+                <li><a class="dropdown-item" href="#">Phim hình sự</a></li>
+                <li><a class="dropdown-item" href="#">Phim hoạt hình</a></li>
+                <li><a class="dropdown-item" href="#">Phim khoa học</a></li>
+                <li><a class="dropdown-item" href="#">Phim viễn tưởng</a></li>
+                <li><a class="dropdown-item" href="#">Phim 18+</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Quốc gia
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Phim Âu Mỹ</a></li>
+                <li><a class="dropdown-item" href="#">Phim Nhật Bản</a></li>
+                <li><a class="dropdown-item" href="#">Phim Việt Nam</a></li>
+                <li><a class="dropdown-item" href="#">Phim Trung Quốc</a></li>
+                <li><a class="dropdown-item" href="#">Phim Hàn Quốc</a></li>
+                <li><a class="dropdown-item" href="#">Phim Đài Lan</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 heading-input" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+
+
+
+          <!-- Đăng nhập và đăng kí -->
+          <div>
+            <div>
+              <button type="button" class="btn btn-primary" onclick="unshow()" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Đăng Nhập
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="header-form">
+                      <div class="header-form-content">
+                        <div>
+                          <h1>ĐĂNG NHẬP/ĐĂNG KÍ</h1>
+                        </div>
+                        <div>
+                          <p>Vui lòng đăng nhập trước khi mua vé để tích luỹ điểm,
+                            cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Phim Hay</p>
+                        </div>
+
+                        <form class="">
+                          <div>
+                            <label for="content"></label>
+                            <div>
+                              <input type="text" class="form-control" id="content" placeholder="email" name="content">
+                            </div>
+                          </div>
+                          <div>
+                            <label for="content"></label>
+                            <div>
+                              <input type="password" class="form-control" id="password" placeholder="Mật Khẩu"
+                                name="content">
+                            </div>
+                          </div>
+                          <div>
+                            <P>Quên mật khẩu?</P>
+                          </div>
+                          <button class="btn">ĐĂNG NHẬP</button>
+                        </form>
+                        <div><a href="./Admin/dangky.html">Đăng kí tại đây</a></div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Đóng đăng nhập ,đăng kí -->
+          <div>
+            <a href="./Admin/login.html"><i class="fa-solid fa-lock" title="Admin"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+  <!-- Phần thân trang -->
+
+  <section class="main">
+    <div class="row">
+      <!-- col-9 -->
+      <div class="col-md-9 row">
+        <!-- nội dung cần thay đổi phim -->
+        <div id="content-change">
+          <!-- <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U_hrwy2CEd8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            </video>
+          </div>
+
+
+          <div class="row">
+            <div class="col-4">
+              <img src="./img/quy-quyet-5.jpg" alt="">
+            </div>
+            <div class="col-8">
+              <h2>Quỷ Quyệt</h2>
+  
+              <div>
+                <ul>
+                  <li>Thể loại: <span> Phim kinh dị</span></li>
+                  <li>Tình trạng: Full</li>
+                  <li>Đạo diễn: Alessandro Antonaci</li>
+                  <li>Diễn viên: Lam Kor-wan</li>
+                  <li>Quốc Gia: <span> USA</span></li>
+                  <li>Thời lượng: <span>124</span> phút</li>
+                </ul>
+              </div>
+              <div>
+                <span class="main-col-8-feedback">Đánh giá </span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-9-container">
+            <h3>NỘI DUNG PHIM</h3>
+            <div>
+              <p>
+                Quỷ Quyệt: Cửa Đỏ Vô Định -Insidious 5: The Red Door (2023)
+                lấy bối cảnh sau mười năm kể từ hai phần phim đầu tiên,
+                Josh Lambert (Patrick Wilson) đang chuyển đến sinh sống tại phía Đông
+                để đưa cậu con trai Dalton (Ty Simpkins) đến học tại một trường đại học bình dị,
+                phủ đầy cây thường xuân. Tuy nhiên, giấc mơ đại học của Dalton lại trở lại một ác mộng
+                khi những con quỷ bị kìm hãm trong quá khứ bằng một cách nào đó đã quay trở lại và tiếp tục ám hai cha
+                con. </p>
+            </div>
+          </div> -->
+        </div>
+        <!-- nội dung thay đổi phim kết thúc -->
+
+        <div>
+          <div class="main-comment">
+            <p>Bình luận chất lượng phim</p>
+            <div class="feedback">
+              <img src="./img/odA9sNLrE86.jpg" alt="">
+              <input id="main-comment-input" type="text" class="main-comment-input">
+            </div>
+            <div id="content-comment" class="content-comment">
+              
+            </div>
+          </div>
+
+          <!-- phim khác -->
+          <h4>Các phim khác</h4>
+          <div>
+            <div class="container text-center">
+              <div class="row align-items-start">
+                <div class="col">
+                  <a href="" class="decoration"><img src="./img/Blue-Beetle-2023.jpg" alt="">
+                    <p>Blue-Beetle</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="" class="decoration"><img src="./img/Chien-Binh-Bao-Den-Wakanda-Bat-Diet.jpg" alt="">
+                    <p>Chiến Binh Báo Đen</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="" class="decoration"><img src="./img/khac-tinh-cua-quy.jpg" alt="">
+                    <p>Khắc Tinh Của Quỷ</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="" class="decoration"><img src="./img/Nguoi-Trong-Mong-Xuan-Khue.jpg" alt="">
+                    <p>Người Trong Mộng</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- phần col-3 -->
+      <div class="col-3">
+        <div class="container-left">
+          <a href=""><img src="./img/f50TAIeR79Yoh1zYb5Tn58zmIxs.jpg" alt=""></a>
+        </div>
+        <div class="container-content">
+          <a href="" class="decoration"><img src="./img/Blue-Beetle-2023.jpg" alt="">
+            <span>Blue</span></a>
+        </div>
+        <div class="container-content">
+          <a href="" class="decoration"><img src="./img/nu-tu-dam-dang.jpg" alt="">
+            <span>Nữ Tu Dâm Đãng</span></a>
+        </div>
+        <div class="container-content">
+          <a href="" class="decoration"><img src="./img/khac-tinh-cua-quy.jpg" alt="">
+            <span>Khắc Tinh Của Quỷ</span></a>
+        </div>
+        <div class="container-content">
+          <a href="" class="decoration"><img src="./img/Chien-Binh-Bao-Den-Wakanda-Bat-Diet.jpg" alt="">
+            <span>Chiến Binh Báo Đen</span></a>
+        </div>
+        <div class="container-content">
+          <a href="" class="decoration"><img src="./img/The-Mandalorian-Season-3.jpg" alt="">
+            <span>The-Mandalorian</span></a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/U_hrwy2CEd8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Phần cuối trang -->
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <div><img src="./img/phimmoi.png" alt=""></div>
+        <div>
+          <p>Trang xem phim Online với giao diện mới được bố trí và thiết kế thân thiện với người dùng.
+            Nguồn phim được tổng hợp từ các website lớn với đa dạng các đầu phim và thể loại vô cùng phong phú.</p>
+        </div>
+      </div>
+      <div class="col-md-8 row">
+        <div class="col-4">
+          <h5>Phim mới</h5>
+          <a class="footer-none" href="">Phim Khoa Học</a><br>
+          <a class="footer-none" href="">Phim Kinh Dị</a><br>
+          <a class="footer-none" href="">Phim Chiếu Rạp</a><br>
+          <a class="footer-none" href="">Phim Hình Sự</a><br>
+          <a class="footer-none" href="">Phim Hành Động</a>
+        </div>
+        <div class="col-4">
+          <h5>Phim Hay</h5>
+          <a class="footer-none" href="">Phim Âu Mỹ</a><br>
+          <a class="footer-none" href="">Phim Hàn Quốc</a><br>
+          <a class="footer-none" href="">Phim Nhật Bản</a><br>
+          <a class="footer-none" href="">Phim Trung Quốc</a><br>
+          <a class="footer-none" href="">Phim Thái Lan</a>
+        </div>
+        <div class="col-4">
+          <h5>Thông Tin</h5>
+          <a class="footer-none" href="">Giới thiệu</a><br>
+          <a class="footer-none" href="">liên hệ chúng tôi</a><br>
+          <a class="footer-none" href="">Điều khoản sử dụng</a><br>
+          <a class="footer-none" href="">Chính sách riêng tư</a><br>
+          <a class="footer-none" href="">Khiếu nại bản quyền</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="./xemonline.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* đầu trang */
+.header{
+  background-color: rgb(120, 105, 105);
+  color: aliceblue;
+  display: flex;
+  padding: 7px 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input{
+  border-radius:6px;
+  padding: 8px 0px;
+}
+
+.header-btn{
+  border-radius:6px;
+  padding: 3px 5px;
+  color:blue !important;
+  border: 2px solid blue;
+  background-color: rgb(80, 255, 229);
+}
+
+/* phần thân */
+.main{
+  padding: 30px;
+  margin-top: 50px;
+  width: 100%;
+  
+}
+.main-title{
+  background-color: black;
+  color: aliceblue;
+  margin:30px;
+  width: 200px;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.title{
+  text-decoration: none;
+    color: aliceblue;
+}
+.main-form{
+  margin-left: 0px !important;
+}
+.align-items-center{
+  margin: 20px;
+
+}
+.form-control{
+  border:2px solid black !important;
+}
+
+table {
+  border-collapse: collapse !important;
+  width: 100%;
+}
+
+th, td{
+  border: 1px solid black !important;
+  padding: 8px;
+  text-align: center;
+  background-color: bisque;
+}
+tr{
+  text-align: center;
+}
+.btn-secondary{
+  background-color: red !important;
+}
+/* cuối trang */
+.footer{
+  background-color: rgb(27, 23, 23);
+  color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+}
+
+  
+ 
+
+
